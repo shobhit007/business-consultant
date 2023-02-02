@@ -33,13 +33,14 @@
     <!-- custom css -->
     <link rel="stylesheet" href="style.css" />
     <script src="navigation.js" defer></script>
+    <script src="observe.js" defer></script>
   </head>
   <body>
     <!-- HEADER -->
-    <header>
-      <div class="primary-header container flex">
+    <header class="container">
+      <div class="primary-header flex">
         <div>
-          <a href="index.html" class="logo">
+          <a href="/index.html" class="logo">
             <p class="fs-700 fw-semibold">BConsult</p>
           </a>
         </div>
@@ -64,7 +65,7 @@
     <!--Primary Page Hero section -->
     <section>
       <div class="primary-page-header container bg-primary">
-        <div class="section-content">
+        <div class="section-content fade-in">
           <div class="primary-content text-align-center">
             <p class="fs-700 fw-bold text-white">About Us</p>
             <ol class="primary-page-links flex">
@@ -85,11 +86,14 @@
     <section class="about">
       <div class="section-wrapper container">
         <div class="section-content flex">
-          <div class="col col-image">
+          <div class="col col-image left-column section-2">
             <img src="/img/about.png" alt="about" />
           </div>
 
-          <div class="col flow" style="--flow-spacing: 1rem">
+          <div
+            class="col flow section-2 right-column section-2"
+            style="--flow-spacing: 1rem"
+          >
             <div class="sticker">
               <p>About us</p>
             </div>
@@ -152,7 +156,7 @@
       <div class="section-wrapper">
         <div class="section-content container">
           <div class="features flex">
-            <div class="features__content flow">
+            <div class="features__content flow slide-in">
               <div class="sticker">Features</div>
               <p class="fs-500 fw-semibold text-dark">
                 Why People Choose us? We Are Trusted & Award Winning Agency
@@ -268,12 +272,12 @@
     <section>
       <div class="section-wrapper container">
         <div class="section-content">
-          <div class="teammate-info text-align-center flow">
+          <div class="teammate-info text-align-center flow slide-in">
             <div class="sticker">Our Team</div>
             <p class="fs-600 fw-semibold text-dark">Meet Our Team Members</p>
           </div>
           <div class="teammate-grid grid">
-            <div class="team-item flow">
+            <div class="team-item flow slide-in">
               <p class="fs-600 fw-semibold text-dark">Full Name</p>
               <p class="fw-500 text-light">Lorem Ipsum</p>
               <img class="teammate-image" src="/img/team-1.jpg" alt="" />
@@ -292,7 +296,7 @@
             </div>
             <!-- teammate 1 -->
 
-            <div class="team-item flow">
+            <div class="team-item flow slide-in">
               <p class="fs-600 fw-semibold text-dark">Full Name</p>
               <p class="fw-500 text-light">Lorem Ipsum</p>
               <img class="teammate-image" src="/img/team-2.jpg" alt="" />
@@ -311,7 +315,7 @@
             </div>
             <!-- teammate 2 -->
 
-            <div class="team-item flow">
+            <div class="team-item flow slide-in">
               <p class="fs-600 fw-semibold text-dark">Full Name</p>
               <p class="fw-500 text-light">Lorem Ipsum</p>
               <img class="teammate-image" src="/img/team-3.jpg" alt="" />
@@ -330,7 +334,7 @@
             </div>
             <!-- teammate 3 -->
 
-            <div class="team-item flow">
+            <div class="team-item flow slide-in">
               <p class="fs-600 fw-semibold text-dark">Full Name</p>
               <p class="fw-500 text-light">Lorem Ipsum</p>
               <img class="teammate-image" src="/img/team-4.jpg" alt="" />

@@ -33,11 +33,12 @@
     <!-- custom css -->
     <link rel="stylesheet" href="style.css" />
     <script src="navigation.js" defer></script>
+    <script src="observe.js" defer></script>
   </head>
   <body>
     <!-- HEADER -->
-    <header>
-      <div class="primary-header container flex">
+    <header class="container">
+      <div class="primary-header flex">
         <div>
           <a href="/index.html" class="logo">
             <p class="fs-700 fw-semibold">BConsult</p>
@@ -64,7 +65,7 @@
     <main class="main container bg-primary">
       <section class="section-wrapper bg-shape-bottom">
         <div class="section-content col-lg flex">
-          <div class="col text-align-center flow">
+          <div class="col text-align-center flow fade-in">
             <h1 class="fs-700 text-white">
               We Help To Push Your Business To The Top Level
             </h1>
@@ -76,7 +77,7 @@
             </p>
             <button class="btn-learn-more">Learn More</button>
           </div>
-          <div class="col mt col-image" style="--mt: 3rem">
+          <div class="col mt col-image fade-in" style="--mt: 3rem">
             <img src="/img/hero.png" alt="hero banner" />
           </div>
         </div>
@@ -87,11 +88,14 @@
     <section class="about">
       <div class="section-wrapper container">
         <div class="section-content flex">
-          <div class="col col-image">
+          <div class="col col-image left-column section-2">
             <img src="/img/about.png" alt="about" />
           </div>
 
-          <div class="col flow" style="--flow-spacing: 1rem">
+          <div
+            class="col flow section-2 right-column section-2"
+            style="--flow-spacing: 1rem"
+          >
             <div class="sticker">
               <p>About us</p>
             </div>
@@ -151,7 +155,7 @@
 
     <!-- newsletter section -->
     <section>
-      <div class="section-wrapper container">
+      <div class="section-wrapper container slide-in">
         <div class="section-content bg-primary">
           <div class="two-columns flex">
             <div class="column flow">
@@ -180,7 +184,7 @@
       <div class="section-wrapper container">
         <div class="section-content">
           <div class="service-section">
-            <div class="top flow">
+            <div class="top flow slide-in">
               <div class="sticker">Our Services</div>
               <p class="fs-700 fw-bold text-dark">
                 We Provide Solutions On Your Business
@@ -189,7 +193,7 @@
             <!-- top end -->
 
             <div class="service-columns grid">
-              <div class="s-col">
+              <div class="s-col slide-in">
                 <div class="s-row">
                   <div class="service-icon">
                     <i class="ri-user-2-fill"></i>
@@ -206,7 +210,7 @@
               </div>
               <!-- col 1 -->
 
-              <div class="s-col">
+              <div class="s-col slide-in">
                 <div class="s-row">
                   <div class="service-icon">
                     <i class="ri-pie-chart-2-fill"></i>
@@ -223,7 +227,7 @@
               </div>
               <!-- col 2 -->
 
-              <div class="s-col">
+              <div class="s-col slide-in">
                 <div class="s-row">
                   <div class="service-icon">
                     <i class="ri-line-chart-fill"></i>
@@ -240,7 +244,7 @@
               </div>
               <!-- col 3 -->
 
-              <div class="s-col">
+              <div class="s-col slide-in">
                 <div class="s-row">
                   <div class="service-icon">
                     <i class="ri-bar-chart-2-fill"></i>
@@ -257,7 +261,7 @@
               </div>
               <!-- col 4 -->
 
-              <div class="s-col">
+              <div class="s-col slide-in">
                 <div class="s-row">
                   <div class="service-icon">
                     <i class="ri-scales-fill"></i>
@@ -274,7 +278,7 @@
               </div>
               <!-- col 5 -->
 
-              <div class="s-col">
+              <div class="s-col slide-in">
                 <div class="s-row">
                   <div class="service-icon">
                     <i class="ri-home-4-fill"></i>
@@ -301,7 +305,7 @@
       <div class="section-wrapper">
         <div class="section-content container">
           <div class="features flex">
-            <div class="features__content flow">
+            <div class="features__content flow slide-in">
               <div class="sticker">Features</div>
               <p class="fs-500 fw-semibold text-dark">
                 Why People Choose us? We Are Trusted & Award Winning Agency
@@ -417,12 +421,12 @@
     <section>
       <div class="section-wrapper container">
         <div class="section-content">
-          <div class="teammate-info text-align-center flow">
+          <div class="teammate-info text-align-center flow slide-in">
             <div class="sticker">Our Team</div>
             <p class="fs-600 fw-semibold text-dark">Meet Our Team Members</p>
           </div>
           <div class="teammate-grid grid">
-            <div class="team-item flow">
+            <div class="team-item flow slide-in">
               <p class="fs-600 fw-semibold text-dark">Full Name</p>
               <p class="fw-500 text-light">Lorem Ipsum</p>
               <img class="teammate-image" src="/img/team-1.jpg" alt="" />
@@ -441,7 +445,7 @@
             </div>
             <!-- teammate 1 -->
 
-            <div class="team-item flow">
+            <div class="team-item flow slide-in">
               <p class="fs-600 fw-semibold text-dark">Full Name</p>
               <p class="fw-500 text-light">Lorem Ipsum</p>
               <img class="teammate-image" src="/img/team-2.jpg" alt="" />
@@ -460,7 +464,7 @@
             </div>
             <!-- teammate 2 -->
 
-            <div class="team-item flow">
+            <div class="team-item flow slide-in">
               <p class="fs-600 fw-semibold text-dark">Full Name</p>
               <p class="fw-500 text-light">Lorem Ipsum</p>
               <img class="teammate-image" src="/img/team-3.jpg" alt="" />
@@ -479,7 +483,7 @@
             </div>
             <!-- teammate 3 -->
 
-            <div class="team-item flow">
+            <div class="team-item flow slide-in">
               <p class="fs-600 fw-semibold text-dark">Full Name</p>
               <p class="fw-500 text-light">Lorem Ipsum</p>
               <img class="teammate-image" src="/img/team-4.jpg" alt="" />

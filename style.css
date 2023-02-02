@@ -168,12 +168,17 @@ body {
 }
 
 /* primary header */
+header {
+  padding: 2rem 3rem 3rem;
+  background-color: var(--primary-clr);
+}
+
 .primary-header {
-  padding: 1rem;
+  padding-block: 0.7rem;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: var(--primary-clr);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .logo {
@@ -239,7 +244,8 @@ body {
 }
 
 @media (max-width: 992px) {
-  .primary-header {
+  header {
+    padding-block: 1rem;
     background-color: var(--white);
   }
 
@@ -645,7 +651,7 @@ body {
 
 /* About page */
 .primary-page-header {
-  padding-block: 6rem;
+  padding-block: 4.5rem;
 }
 
 .primary-page-links {
@@ -671,6 +677,10 @@ body {
   padding: 4rem 1rem 3rem;
   max-width: 756px;
   margin: 0 auto;
+}
+
+.form {
+  margin-top: 4rem;
 }
 
 .form-input {
@@ -705,4 +715,87 @@ body {
   .form-control {
     flex-direction: column;
   }
+}
+
+/* animations */
+/* section one */
+.fade-in {
+  transform: scale(0);
+  transition: 1.6s;
+}
+
+.fade-in.appear {
+  transform: scale(1);
+}
+
+/* section two */
+.left-column {
+  transform: scale(0);
+}
+
+.right-column {
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.left-column,
+.right-column {
+  transition: 0.7s ease-in;
+}
+
+.left-column.appear {
+  transform: scale(1);
+}
+.right-column.appear {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* section three */
+.slide-in {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 0.6s ease-in;
+}
+
+.slide-in.appear {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* section 4 */
+.s-col:nth-child(2),
+.f-col:nth-child(2),
+.team-item:nth-child(2) {
+  transition-delay: 100ms;
+}
+.s-col:nth-child(3),
+.f-col:nth-child(3),
+.team-item:nth-child(3) {
+  transition-delay: 200ms;
+}
+.s-col:nth-child(4),
+.f-col:nth-child(4),
+.team-item:nth-child(4) {
+  transition-delay: 300ms;
+}
+.s-col:nth-child(5),
+.f-col:nth-child(5),
+.team-item:nth-child(5) {
+  transition-delay: 400ms;
+}
+.s-col:nth-child(6),
+.f-col:nth-child(6),
+.team-item:nth-child(6) {
+  transition-delay: 500ms;
+}
+
+/* section 5 */
+.f-col {
+  opacity: 0;
+  transition: 300ms ease-in;
+}
+
+.f-col.appear {
+  opacity: 1;
 }

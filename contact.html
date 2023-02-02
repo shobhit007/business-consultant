@@ -33,13 +33,14 @@
     <!-- custom css -->
     <link rel="stylesheet" href="style.css" />
     <script src="navigation.js" defer></script>
+    <script src="observe.js" defer></script>
   </head>
   <body>
     <!-- HEADER -->
-    <header>
-      <div class="primary-header container flex">
+    <header class="container">
+      <div class="primary-header flex">
         <div>
-          <a href="index.html" class="logo">
+          <a href="/index.html" class="logo">
             <p class="fs-700 fw-semibold">BConsult</p>
           </a>
         </div>
@@ -64,7 +65,7 @@
     <!--Primary Page Hero section -->
     <section>
       <div class="primary-page-header container bg-primary">
-        <div class="section-content">
+        <div class="section-content fade-in">
           <div class="primary-content text-align-center">
             <p class="fs-700 fw-bold text-white">Contact Us</p>
             <ol class="primary-page-links flex">
@@ -86,12 +87,14 @@
       <div class="section-wrapper container">
         <div class="section-content">
           <div class="contact-container text-align-center flow">
-            <div class="sticker">Contact Us</div>
-            <p class="fs-600 fw-semibold text-dark">
-              If You Have Any Query, Please Feel Free Contact Us
-            </p>
+            <div class="flow slide-in">
+              <div class="sticker">Contact Us</div>
+              <p class="fs-600 fw-semibold text-dark">
+                If You Have Any Query, Please Feel Free Contact Us
+              </p>
+            </div>
 
-            <div class="form flow">
+            <div class="form flow slide-in">
               <div class="form-control flex">
                 <input type="text" placeholder="Your Name" class="form-input" />
                 <input
